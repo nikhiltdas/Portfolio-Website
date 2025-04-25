@@ -1,11 +1,11 @@
 /*==================================
-* Author        : "ThemeSine"
-* Template Name :  Browny  HTML Template
+* Author        : "Nikhil"
+* Template Name :  Portfolio Website
 * Version       : 1.0
 ==================================== */
 
 /*==================================
-font-family: 'Poppins', sans-serif;
+font-family: 'Poppins', sans-serif,meddon;
 ==================================== */
 
 
@@ -38,9 +38,9 @@ font-family: 'Poppins', sans-serif;
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: "Cascadia Mono", sans-serif;
 	font-size:16px;
-	color: #676a81;
+	color: #646883;
 	background: #fff;
     max-width:1920px;
     margin:0 auto;
@@ -50,7 +50,7 @@ body{
 a,a:hover,a:active,a:focus {
 	display:inline-block;
 	text-decoration:none;
-	color: #6a708e;
+	color: #10ced1;
 	font-size:16px;
 	padding:0;
 }
@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	color:#43485c;
     font-size: 16px;
-	font-family: 'Poppins', sans-serif;
+	font-family:"Cascadia Mono", sans-serif;;
 	text-transform: capitalize;
 }
 p {
@@ -118,12 +118,13 @@ nav.navbar.bootsnav {
 
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
-    display: inline-block;
-    color: #d92cf9;
+    display: -ms-grid;
+    color: #1dc74a; /* color of Navbar(Nikhil)*/
     font-size: 20px;
-    font-weight: 600;
+    font-family: "Meddon",cursive;
+    font-weight: 400;
     padding: 33px 0px 57px;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 /*.navbar-brand*/
 
@@ -139,7 +140,7 @@ nav.navbar.bootsnav ul.nav > li > a {
     transition: 0.3s linear;
 }
 nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #acc7b6;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -148,7 +149,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#fff;}/* Navbar Icons*/
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
 /*.nav li*/
 
@@ -163,7 +164,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #d92cf9;
+  background-color: #33e023;
 }
 /*.menu-ui-design*/
 
@@ -173,11 +174,11 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #d92cf9;
+    border: 1px solid #0ca9c5;
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
+nav.navbar.bootsnav .navbar-toggle i{color: #dcdc13;}
 /*.navbar-toggle */
 
 
@@ -190,7 +191,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/about/aokigahara-forest-dark-style.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -205,20 +206,19 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     height:100%;
 }
 
-/*.header-text-area*/
+/*.header-text-area (HI i'M NIKHIL)*/
 .header-text h2 {
-    color: #fff;
+    color: #bcc11c;
     font-size: 54px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1.5;
+    line-height: 1.0;
 }
-.header-text h2 span {color: #d92cf9;}
+.header-text h2 span {color: #0ca6ae;}
 .header-text p {
     color: #fff;
     font-size: 20px;
     font-weight: 300;
-    text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
 }
@@ -229,8 +229,8 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     border-radius: 3px;
     text-transform: capitalize;
     color: #fff;
-    background: #b636ff;
-    border:1px solid #b636ff;
+    background: ;
+    border:1px solid #18a3a8;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -238,7 +238,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#bcc11c;border: 1px solid #9f00ff;}
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -255,7 +255,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .single-about-txt p {
     font-size: 16px;
-    color: #999fb3;
+    color: #97a4cf;
     padding: 35px 0 43px;
     border-bottom: 1px solid #999fb3;
 }
@@ -352,7 +352,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 }
 .timeline-horizontal-border i {
     font-size:  10px;
-    color: #d92cf9;
+    color: #13bac0;
     margin-right:  5px;
 }
 span.single-timeline-horizontal {
@@ -370,12 +370,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         6.  Skills
 --------------------------------------*/
 .skills {
-    
+    align-items: center;
 }
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
 .section-heading h2 {
     font-size: 24px;
+    align-items: center;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 50px;
@@ -386,13 +387,14 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .single-progress-txt h3 {
     width: 10%;
-    color: #a606c3;
+    color: #0da9c1;
     position: relative;
     top: 6px;
     left: 20px;
 }
 .barWrapper {
     font-weight: 400;
+    align-items: center;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -406,7 +408,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     margin-bottom: 37px;
 }
 .progress-bar {
-   background: #b636ff;
+   background: #0a9abe;
     border-radius: 3px;
    -webkit-transition: width 1.5s ease-in-out;
    -ms-transition: width 1.5s ease-in-out;
@@ -480,7 +482,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .timeline-content span>i, .experience-time span>i {
-    color: #d92cf9;
+    color: #1a9ad1;
     position: absolute;
     font-size: 10px;
     left: -14.5%;
@@ -565,7 +567,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     content: " ";
     width:100%;
     height: 100%;
-    background: #d92cf9;
+    background: #20a1d0;
     background: -moz-linear-gradient(left, #d92cf9 0%, #b636ff 100%);
     background: -webkit-linear-gradient(left, #d92cf9 0%,#b636ff 100%);
     background: linear-gradient(to right, #d92cf9 0%,#b636ff 100%);
@@ -717,8 +719,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     height:50px;
     text-transform:capitalize;
     margin-top: 3px;
-    background: #b636ff;
-    border: 1px solid #b636ff;
+    background: #1397c0;
+    border: 1px solid #1caccd;
     cursor:pointer;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
      -webkit-transition: .5s; 
@@ -743,8 +745,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     
 }
 .single-contact-btn:hover{
-    background: #9f00ff;
-    border: 1px solid #9f00ff;
+    background: #18bfce;
+    border: 1px solid #24bae7;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
 }
 
@@ -795,7 +797,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition: .3s;
 }
 .hm-foot-icon ul li>a:hover{
-    color: #b636ff;
+    color: #1c76ad;
 }/*hm-foot-icon*/
 
 .hm-footer-copyright p{
@@ -819,8 +821,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 20px;
     cursor: pointer;
     color: #fff;
-    background:#b636ff;
-	border:1px solid #b636ff;
+    background:#109fc7;
+	border:1px solid #1697b8;
 	border-radius:50%;
 	-webkit-transition: .5s; 
 	-moz-transition:.5s; 
