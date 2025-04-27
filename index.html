@@ -132,13 +132,17 @@
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>phone</h3>
-											<p>+91 8281461307</p>
+											<a href="tel:+918281461307">
+												<p>+91 8281461307</p>
+											</a>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-about-add-info">
 											<h3>email</h3>
-											<p>nikhiltd05@gmail.com</p>
+											<a href="mailto:nikhiltd05@gmail.com">
+												<p>nikhiltd05@gmail.com</p>
+											 </a>
 										</div>
 									</div>
 									<div class="col-sm-4">
@@ -764,6 +768,25 @@
 		<!--clients start -->
 	
 
+
+		<!--blog start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>blogs</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					
+					<div class="custom-card-container"></div>
+
+				</div><!--/.blog-content-->
+			</div><!--/.blog-->
+
+		</section><!--/.blog-->
+		<!--blog end -->
+		
+		
+		
 		<!--contact start -->
 		<section id="contact" class="contact">
 			<div class="section-heading text-center">
@@ -909,6 +932,54 @@
         
         <!--Custom JS-->
         <script src="assets/js/custom.js"></script>
+
+		<script>
+			const INOVUS_BLOGS = `https://blog.inovuslabs.org/ghost/api/content/posts/?key=de858d77141cc957615e54f70b&filter=authors:nikhil&fields=title,custom_excerpt,excerpt,published_at,url,feature_image`;
+
+			const customCardContainer = document.querySelector('.custom-card-container');
+			const createCustomCard = (title, excerpt, imageUrl, url) => {
+				const card = document.createElement('div');
+				card.classList.add('custom-card');
+
+				const img = document.createElement('img');
+				img.classList.add('custom-card-img');
+				img.src = imageUrl;
+				img.alt = title;
+
+				const cardBody = document.createElement('div');
+				cardBody.classList.add('custom-card-body');
+
+				const cardTitle = document.createElement('h5');
+				cardTitle.classList.add('custom-card-title');
+				cardTitle.textContent = title;
+
+				const cardText = document.createElement('p');
+				cardText.classList.add('custom-card-text');
+				cardText.textContent = (excerpt || '').substring(0, 100) + '...';
+
+				const link = document.createElement('a');
+				link.href = url + '?ref=https://nikhiltdas.me'; 
+				link.target = "_blank";
+				link.appendChild(cardText);
+
+				cardBody.appendChild(cardTitle);
+				cardBody.appendChild(link);
+				card.appendChild(img);
+				card.appendChild(cardBody);
+
+				customCardContainer.appendChild(card);
+			};
+
+			fetch(INOVUS_BLOGS)
+				.then(response => response.json())
+				.then(data => {
+					data.posts.forEach(post => {
+						const { title, excerpt, feature_image, url } = post;
+						createCustomCard(title, excerpt, feature_image, url);
+					});
+				})
+				.catch(error => console.error('Error fetching blog posts:', error));
+		</script>
         
     </body>
 	
