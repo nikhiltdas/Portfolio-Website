@@ -1,4 +1,4 @@
-# 🚀 Nikhil Das Portfolio
+# Hey I'm  Nikhil Das 
 
 Welcome to my personal portfolio website! This platform showcases my projects, technical skills, achievements, and experiences in Electronics, IoT, Embedded Systems, and Web Development.
 
@@ -12,7 +12,6 @@ I am an Electronics and IoT enthusiast, educator, and maker passionate about bui
 * Raspberry Pi Projects
 * Automation Systems
 * PCB Design
-* Web Development
 * STEM Education
 
 ## 🔗 Portfolio Features
@@ -78,10 +77,10 @@ Add screenshots of your portfolio here.
 
 ## 🤝 Connect With Me
 
-* GitHub: https://github.com/yourusername
-* LinkedIn: https://linkedin.com/in/yourprofile
-* Portfolio: https://yourwebsite.com
-* Email: [your@email.com](mailto:your@email.com)
+* GitHub: https://github.com/nikhiltdas
+* LinkedIn: https://www.linkedin.com/in/nikhil-das-9404ab1a4/
+* Portfolio: https://nikhiltdas.vercel.app
+* Email: [nikhiltd05@gmail.com](mailto:nikhiltd05@gmail.com)
 
 ## 📄 License
 
